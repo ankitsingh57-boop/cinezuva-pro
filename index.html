@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="https://lucide.dev/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- Primary Meta Tags -->
+    <title>Cinezuva - Download 4K, HD Bollywood, Hollywood & South Movies</title>
+    <meta name="title" content="Cinezuva - Download 4K, HD Bollywood, Hollywood & South Movies">
+    <meta name="description" content="Cinezuva is the best platform to download latest Bollywood, Hollywood, South Indian Hindi Dubbed movies and Web Series in 480p, 720p, 1080p and 4K quality. Fast dual audio movie downloads." />
+    <meta name="keywords" content="Cinezuva, movie download, bollywood movies, hollywood hindi dubbed, south indian movies, 4k movies, 1080p download, web series, dual audio, netflix free, latest movies 2025" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cinezuva.com/">
+    <meta property="og:title" content="Cinezuva - Premium Movie Downloads">
+    <meta property="og:description" content="Download latest movies and web series in high quality. No ads, fast servers.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=1000&auto=format&fit=crop">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://cinezuva.com/">
+    <meta property="twitter:title" content="Cinezuva - Premium Movie Downloads">
+    <meta property="twitter:description" content="Download latest movies and web series in high quality. No ads, fast servers.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=1000&auto=format&fit=crop">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Schema.org Markup for Website and Logo -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Cinezuva",
+      "url": "https://cinezuva.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://cinezuva.com/#/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Cinezuva",
+      "url": "https://cinezuva.com",
+      "logo": "https://lucide.dev/favicon.ico",
+      "sameAs": []
+    }
+    </script>
+
+    <style>
+      :root {
+        --brand-red: #e50914;
+        --brand-dark: #0f0f0f;
+        --brand-card: #1a1a1a;
+        --brand-text: #e5e5e5;
+      }
+      
+      html {
+        background-color: var(--brand-dark);
+        /* Completely disable pull-to-refresh glow on Android */
+        overscroll-behavior-y: none; 
+        overscroll-behavior-x: none;
+      }
+
+      body {
+        background-color: var(--brand-dark);
+        color: var(--brand-text);
+        transition: background-color 0.5s ease, color 0.5s ease;
+        -webkit-tap-highlight-color: transparent;
+        overscroll-behavior-y: none;
+      }
+      
+      /* Remove default outline and tap highlight colors which can be yellow on some Androids */
+      * {
+        -webkit-tap-highlight-color: transparent;
+        outline: none;
+      }
+
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: var(--brand-dark); 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--brand-red); 
+      }
+
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+      }
+
+      /* Splash Screen Animation */
+      @keyframes cin-zoom {
+        0% { transform: scale(1.5); opacity: 0; filter: blur(10px); }
+        30% { transform: scale(1); opacity: 1; filter: blur(0px); }
+        80% { transform: scale(1); opacity: 1; filter: blur(0px); }
+        100% { transform: scale(4); opacity: 0; filter: blur(20px); }
+      }
+      
+      .animate-cin-intro {
+        animation: cin-zoom 2.5s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                red: 'var(--brand-red)',
+                dark: 'var(--brand-dark)',
+                card: 'var(--brand-card)',
+                text: 'var(--brand-text)'
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-out',
+              'fade-in-up': 'fadeInUp 0.7s ease-out',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.10.1",
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@2.39.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script>
+      // Capture the install prompt event immediately
+      window.deferredPrompt = null;
+      window.addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault();
+        window.deferredPrompt = e;
+      });
+
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').then(registration => {
+            console.log('SW registered:', registration);
+          }).catch(registrationError => {
+            console.log('SW registration failed:', registrationError);
+          });
+        });
+      }
+    </script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
